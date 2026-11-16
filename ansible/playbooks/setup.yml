@@ -6,9 +6,10 @@
   tasks:
     - name: Install development tools
       ansible.builtin.apt
-        - git
-        - vim
-        - htop
-        - curl
-      state: present
-      update_cache: true
+        name:
+          - git
+          - vim
+          - htop
+          - curl
+        state: present
+        update_cache: true
