@@ -1,0 +1,14 @@
+---
+- name: Setup development environment
+  hosts: lab
+  become: true
+
+  tasks:
+    - name: Install development tools
+      ansible.builtin.apt
+        - git
+        - vim
+        - htop
+        - curl
+      state: present
+      update_cache: true
