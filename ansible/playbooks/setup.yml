@@ -5,7 +5,7 @@
 
   tasks:
     - name: Install development tools
-      ansible.builtin.apt
+      ansible.builtin.apt:
         name:
           - git
           - vim
