@@ -1,0 +1,19 @@
+# Terraform
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.auto.tfvars
+*.tfplan
+
+# Credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+vault-password*
+
+# Local configuration
+inventory.ini
+inventory.yml
